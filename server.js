@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
 const data = require('./data');
-const generateRanking = require('./user_rank');
+const calculateRanking = require('./user_rank');
 
 const server = app.listen(port, () => console.log(`Listening on port ${port}`));
 
@@ -21,7 +21,7 @@ app.get("/user-info", (req, res) => {
 app.get('/users', (req, res) => {
   const mappedData = data.map((user) => {
     
-    const ranking = generateRanking(user);
+    const ranking = calculateRanking(user);
 
     return {
       ...user,
