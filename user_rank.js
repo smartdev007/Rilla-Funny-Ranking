@@ -14,14 +14,14 @@ const keywordsCriteria = {
   }
   // --- End
   
-  module.exports = function (user) {
+  function funnyRankings(user) {
     const _conversations = user.conversations.length * conversationCriteria.conversations;
   
-    var customers = 0;
-    var sentences = 0;
-    var word = 0;
+    let customers = 0;
+    let sentences = 0;
+    let word = 0;
   
-    var keywords = {
+    let keywords = {
       great: 0,
       better: 0,
       good: 0,
@@ -50,8 +50,8 @@ const keywordsCriteria = {
     const _customers = customers * conversationCriteria.customers;
     const _sentences = sentences * conversationCriteria.sentences;
     const _word = word * conversationCriteria.word;
-    
-    var _keywords = 0;
+
+    let _keywords = 0;
 
     Object.keys(keywords).forEach(key => {
       _keywords = _keywords + keywords[key] * keywordsCriteria[key];
@@ -62,3 +62,7 @@ const keywordsCriteria = {
     return ranking;
   }
   
+  
+  module.exports = {
+      funnyRankings
+  }
