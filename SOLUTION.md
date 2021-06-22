@@ -4,11 +4,11 @@ Enter a brief explanation of your solution here. Include an explanation about ho
 
 # Code Structure
 
-I have made most important changes in two files, `FunnyRankings.js` and `user_rank.js` which is a new file that I created.
+I have made most important changes in two files, `FunnyRankings.js` and `user_rank.js` which is a new file that I created under the root project folder. I have also added a end point test case in `server.js` under `test` folder.
 
 # Approach to the problem
 
-So main thing about this problem was to figure out how I am going to caluclate the rating for each user. First thought that I had in my mind was to calculate the rating for each user based on the given boolean value of `funny` parameter of `sentences` array of the object inside `data.json` file. But I wanted to try a different approach to this challenge. Basically, I am calculating the rank based on how many conversations a sales rep is having with how many customers. More customers with more conversations, more is their ranking.
+The main thing about this problem was to figure out how I am going to caluclate the rating for each user. First thought that I had in my mind was to calculate the rating for each user based on the given boolean value of `funny` parameter of `sentences` array of the object inside `data.json` file. But I wanted to try a different approach to this challenge with something unique and quite challenging. So, my other approach is to basically calculate the rank based on how many conversations a sales rep is having with how many customers. More customers with more conversations, more is their ranking.
 
 So there are two criteria to calculate the rank. One is for keywords and the other one is for sentences.
 
@@ -31,8 +31,8 @@ For example, let's say user A has
 `customers: 6,`
 `words: 1200`
 
-Then ranking for user A is calculated as: `25*10 + 300*9 + 6*8 + 1200*6` with addition of keywords count
+Then ranking for user A is calculated as: `25*10 + 300*9 + 6*8 + 1200*6` with further addition of keywords' total count
 
 # Next step
 
-To expand onto this feature, I would also add `sales` parameter in the `data.js` which will show if a user was succussful to make the sale. This would also give us the analytics of total sales relative to funnier sales rep.
+To expand onto this feature, I would also add `sales` parameter in the `data.json` which will show if a user was succussful to make the sale happen. This would also give us the analytics of total sales relative to funnier sales rep.
