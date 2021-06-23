@@ -35,4 +35,4 @@ Then ranking for user A is calculated as: `25*10 + 300*9 + 6*8 + 1200*6` with fu
 
 # Next step
 
-To expand onto this feature, I would also add `sales` parameter in the `data.json` which will show if a user was succussful to make the sale happen. This would also give us the analytics of total sales relative to funnier sales rep.
+To expand onto this feature, I would also add `sales` parameter in the `data.json` which will show if a user was succussful in selling the product. This would also give us the analytics of total sales relative to funnier sales rep.
