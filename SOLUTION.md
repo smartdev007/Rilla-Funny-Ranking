@@ -4,11 +4,11 @@ Enter a brief explanation of your solution here. Include an explanation about ho
 
 # Code Structure
 
-I have made most important changes in two files, `FunnyRankings.js` and `user_rank.js` which is a new file that I created under the root project folder. I have also added a end point test case in `server.js` under `test` folder.
+I have made most important changes in two files, `FunnyRankings.js` and `user_rank.js` which is a new file that I created under the root project folder. I have also added an end point test case in `server.js` under `test` folder.
 
 # Approach to the problem
 
-The main thing about this problem was to figure out how I am going to caluclate the rating for each user. First thought that I had in my mind was to calculate the rating for each user based on the given boolean value of `funny` parameter of `sentences` array of the object inside `data.json` file. But I wanted to try a different approach to this challenge with something unique and quite challenging. So, my other approach is to basically calculate the rank based on how many conversations a sales rep is having with how many customers. More customers with more conversations, more is their ranking.
+The main thing about this problem was to figure out how I am going to caluclate the rating for each user. First thought that I had in my mind was to calculate the rating for each user based on the given boolean value of `funny` parameter of `sentences` array of the object inside `data.json` file. But I wanted to try a different approach to this challenge which is something unique and quite challenging. So, my other approach is to basically calculate the rank based on how many conversations a sales rep is having with how many customers. More customers with more conversations, more is their ranking.
 
 So there are two criteria to calculate the rank. One is for keywords and the other one is for sentences.
 
