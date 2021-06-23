@@ -2,6 +2,14 @@
 
 Enter a brief explanation of your solution here. Include an explanation about how you structured your code and the approach you took to implementing the feature. Provide an answer to the following question in this file: What will be the next thing you do to expand on this feature and why?
 
+# Installation Instruction
+
+Install the package dependencies by running the command `npm i` in both root directory as well as `client` folder.
+
+# Running
+
+First run the backend in root directory of the project by entering the command `npm run` and then simultaneously run the frontend with same command inside `client` folder by opening another console window.
+
 # Code Structure
 
 I have made most important changes in two files, `FunnyRankings.js` and `user_rank.js` which is a new file that I created under the root project folder. I have also added an end point test case in `server.js` under `test` folder.
@@ -34,5 +42,5 @@ For example, let's say user A has
 Then ranking for user A is calculated as: `25*10 + 300*9 + 6*8 + 1200*6` with further addition of keywords' total count
 
 # Next step
-
+https://github.com/smartdev007/Rilla-Funny-Ranking.git
 To expand onto this feature, I would also add `sales` parameter in the `data.json` which will show if a user was succussful in selling the product. This would also give us the analytics of total sales relative to funnier sales rep.
